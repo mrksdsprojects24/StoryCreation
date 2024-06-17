@@ -10,7 +10,7 @@ text = st.text_input("Enter a few details for me to write a story around and cli
 
 # Button to trigger summarization
 if st.button("Generate"):
-  prompt = f"Let us write a story around {text}."
+  prompt = f"Let us write a story. {text}."
   story = tg_pipeline(
     prompt,
     pad_token_id=tg_pipeline.tokenizer.eos_token_id,
